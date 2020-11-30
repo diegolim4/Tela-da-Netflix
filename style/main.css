@@ -1,0 +1,108 @@
+:root{ /*para declarar uma variavel dentro do css declaramos dentro da raiz do documento(root)*/
+    --vermelho:   red;
+    --preta: black; 
+
+} 
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*Elemento base*/
+body{
+   background-color: var(--preta);
+   font-family: 'Arial', Times, serif;
+   color: white; 
+}
+
+
+header .container{    /*Sempre que usar o '.' depois da tag se refere a classe, sem o ponto é a propria tag */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+header .logo{
+    color: var(--vermelho);
+    margin-left: 5px;
+    font-family: 'Arial Black', Times;
+    font-size: 40px;
+
+}
+
+header nav a{
+    text-decoration: none;
+    color: #aaa;
+    margin-right: 13px;
+}
+
+header nav a:houver{
+    color: #fff;
+}
+/*filme principal*/
+.filme-principal{
+    font-size:16px;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5) 100%), url('../img/mad-men.jpg');
+    height:415px;
+    background-size:cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+       
+}
+
+.filme-principal .descricao{
+    font-size: 18px ;
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 50px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.5);
+    border: none;
+    color:white;
+    padding:17px 30px;  /*o padding trabalha com os elementos internos */
+    margin-right: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{  
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+.container{
+    margin-left: 20px ;
+}
+
+.filme-principal .container{
+    width: 70%;
+}
+
+
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+.carrosel-filme{
+    margin-top: 5px;
+}
